@@ -1,0 +1,5 @@
+package class_224_interface_car_rental.entities;
+
+public class Invoice {
+
+}
