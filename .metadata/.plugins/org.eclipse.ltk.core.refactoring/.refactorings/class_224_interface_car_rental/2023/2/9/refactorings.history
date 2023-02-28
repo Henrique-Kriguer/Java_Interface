@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;vehicle&apos; in &apos;class_224_interface_car_rental.entities.CarRental&apos; to &apos;model&apos;&#x0D;&#x0A;- Original project: &apos;class_224_interface_car_rental&apos;&#x0D;&#x0A;- Original element: &apos;class_224_interface_car_rental.entities.CarRental.vehicle&apos;&#x0D;&#x0A;- Renamed element: &apos;class_224_interface_car_rental.entities.CarRental.model&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;vehicle&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;class_224_interface_car_rental.entities{CarRental.java[CarRental^vehicle" name="model" references="true" setter="false" stamp="1677511046628" textual="false" version="1.0"/>
+</session>
