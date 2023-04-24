@@ -7,12 +7,12 @@ import class_224_interface_car_rental.entities.Invoice;
 
 public class BrazilRentalServices{
 
-	private Double pricePerHour;
+	private double pricePerHour;
 	private double pricePerDay;
 	
 	private TaxService taxService;
 
-	public BrazilRentalServices(Double pricePerHour, double pricePerDay, TaxService taxService) {
+	public BrazilRentalServices(double pricePerHour, double pricePerDay, TaxService taxService) {
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
 		this.taxService = taxService;
