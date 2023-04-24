@@ -5,14 +5,14 @@ import java.time.Duration;
 import class_224_interface_car_rental.entities.CarRental;
 import class_224_interface_car_rental.entities.Invoice;
 
-public class BrazilRentalServices{
+public class RentalServices{
 
 	private double pricePerHour;
 	private double pricePerDay;
 	
 	private TaxService taxService;
 
-	public BrazilRentalServices(double pricePerHour, double pricePerDay, TaxService taxService) {
+	public RentalServices(double pricePerHour, double pricePerDay, TaxService taxService) {
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
 		this.taxService = taxService;

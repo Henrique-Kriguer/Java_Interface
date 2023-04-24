@@ -7,8 +7,8 @@ import java.util.Scanner;
 
 import class_224_interface_car_rental.entities.CarRental;
 import class_224_interface_car_rental.entities.Vehicle;
-import model.services.BrazilRentalServices;
-import model.services.BrazilTaxService;
+import model.services.RentalServices;
+import model.services.TaxService;
 
 public class Program {
 	public static void main(String[] args) {
@@ -24,20 +24,20 @@ public class Program {
 		System.out.print("Retorno (dd/MM/yyyy hh:mm)" );
 		LocalDateTime finish = LocalDateTime.parse( sc.nextLine(),fmt);	
 		
-		CarRental rental = new CarRental(start, finish, new Vehicle( model));
+		CarRental cr = new CarRental(start, finish, new Vehicle( model));
 		
 		System.out.print("Entre com o preço por hora: ");
 		Double pricePerHour = sc.nextDouble();
 		System.out.print("Entre com o preço por dia: ");
 		Double pricePerDay = sc.nextDouble();
 		
-		BrazilRentalServices brasilRentalServices = new BrazilRentalServices(pricePerHour, pricePerDay, new BrazilTaxService());
-		brasilRentalServices.processInvoice(rental);
+		RentalServices rentalService = new RentalServices(pricePerHour, pricePerDay, new TaxService());
+		rentalService.processInvoice(cr);
 		
 		System.out.println("Fatura: ");
-		System.out.println("Pagamento básico: " + rental.getInvoice().getBasicPayment());
-		System.out.println("Impoto: "+ rental.getInvoice().getTax());
-		System.out.println("Pagamento Total : "+ rental.getInvoice().getTotalPayment());
+		System.out.println("Pagamento básico: " +String.format("%.2f, cr.getInvoice().getBasicPayment()"));
+		System.out.println("Imposto: "+ String.format("%.2f, cr.getInvoice().getTax())"));
+		System.out.println("Pagamento Total : "+String.format("%.2f, cr.getInvoice().getTotalPayment())"));
 		
 		sc.close();
 	}

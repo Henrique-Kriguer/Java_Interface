@@ -7,7 +7,6 @@ public class CarRental {
 	private LocalDateTime start;
 	private LocalDateTime finish;
 	private	Vehicle model;
-	
 	private Invoice invoice;
 	
 	public Invoice getInvoice() {
@@ -21,7 +20,7 @@ public class CarRental {
 	public CarRental () {
 		
 	}
-
+	
 	public CarRental(LocalDateTime start, LocalDateTime finish, Vehicle model) {
 		this.start = start;
 		this.finish = finish;
